@@ -206,7 +206,6 @@ export default function App() {
               Shaping Experiences That Make Life Simpler
             </h2>
           </motion.div>
-
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -235,28 +234,6 @@ export default function App() {
             </div>
           </motion.div>
         </section>
-
-        {/* WIDE ASSET SECTION */}
-        <motion.section 
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="px-6 md:px-20 mb-20 md:mb-32"
-        >
-          <div className="w-full aspect-[21/9] overflow-hidden rounded-[30px] md:rounded-[40px] bg-bg-inner border border-white/5 relative group">
-            <motion.img 
-              initial={{ scale: 1.15 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 2.5, ease: "easeOut" }}
-              src="https://images.unsplash.com/photo-1516216628859-9bccecad13fc?auto=format&fit=crop&q=80&w=2070" 
-              alt="Atmospheric architecture"
-              className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-1000"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-          </div>
-        </motion.section>
 
         {/* ABOUT SECTION */}
         <section id="about" className="py-24 md:py-40 px-6 md:px-20 bg-bg-inner rounded-[30px] md:rounded-[40px] mb-20 scroll-mt-20">
